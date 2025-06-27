@@ -5,9 +5,58 @@
   <title>QR Code Scanner</title>
   <script src="https://unpkg.com/html5-qrcode"></script>
   <style>
-    body { font-family: sans-serif; text-align: center; padding: 20px; }
-    #reader { width: 300px; margin: auto; }
-    #result { margin-top: 20px; font-size: 18px; font-weight: bold; }
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 30px;
+  background-color: #f0f2f5;
+  margin: 0;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+#reader {
+  width: 320px;
+  margin: 20px auto;
+  border: 3px solid #4caf50;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  padding: 12px;
+  background-color: #ffffff;
+}
+
+#result {
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+button {
+  padding: 12px 22px;
+  margin: 10px 6px;
+  font-size: 16px;
+  border: none;
+  background-color: #4caf50;
+  color: #ffffff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #43a047;
+  transform: translateY(-1px);
+}
+
+span#output {
+  color: #ff5722;
+}
+
   </style>
 </head>
 <body>
